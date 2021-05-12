@@ -8,5 +8,6 @@ async def set_default_commands(dp):
         BotCommand('menu', 'Bots menu'),
         BotCommand('quiz', 'Quick test'),
         BotCommand('get_crypto_price', 'Get cryptocurrency price'),
-        BotCommand('show_on_map', 'Show nearest crypto exchangers')
+        BotCommand('show_on_map', 'Show nearest crypto exchangers'),
+        BotCommand('email', 'Update email in database')
     ])

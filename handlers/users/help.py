@@ -12,7 +12,8 @@ async def bot_help(message: types.Message):
             "/menu - Get bot menu",
             "/quiz - Quick test",
             "/get_crypto_price - Get cryptocurrency price",
-            "/show_on_map - Show nearest crypto exhangers"
+            "/show_on_map - Show nearest crypto exhangers",
+            "/email - Update info in database about you"
         )
     
     await message.answer("\n".join(text))
