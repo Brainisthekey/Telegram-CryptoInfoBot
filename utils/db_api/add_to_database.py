@@ -25,6 +25,7 @@ async def add_items():
                    subcategory_name="📊 BNBUSDT", subcategory_code="BNBUSDT",
                    photo="https://pl.tradingview.com/chart/?symbol=BINANCE%3ABNBUSDT")
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(create_db())
-loop.run_until_complete(add_items())
+def create_structue_database():
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(create_db())
+    loop.run_until_complete(add_items())
