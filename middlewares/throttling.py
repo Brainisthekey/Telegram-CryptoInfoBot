@@ -1,4 +1,3 @@
-import asyncio
 from aiogram import types, Dispatcher
 from aiogram.dispatcher import DEFAULT_RATE_LIMIT
 from aiogram.dispatcher.handler import CancelHandler, current_handler
@@ -27,8 +26,8 @@ class ThrottlingMiddleware(BaseMiddleware):
             key = f"{self.prefix}_message"
         try:
             await dispatcher.throttle(key, rate=limit)
-        except Throttled as t:
-            await self.message_throttled(message, t)
+        except Throttled as err:
+            await self.message_throttled(message, err)
             raise CancelHandler()
 
     async def message_throttled(self, message: types.Message, throttled: Throttled):

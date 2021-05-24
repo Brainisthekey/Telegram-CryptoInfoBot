@@ -1,6 +1,6 @@
+from loader import dp, db
 from aiogram.dispatcher.storage import FSMContext
 from aiogram.types.message import Message
-from loader import dp, db
 from aiogram.dispatcher.filters import Command
 
 

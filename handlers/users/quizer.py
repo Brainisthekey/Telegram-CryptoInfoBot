@@ -1,8 +1,8 @@
+from states import Test
 from aiogram import types
+from loader import dp
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
-from loader import dp
-from states import Test
 
 
 
