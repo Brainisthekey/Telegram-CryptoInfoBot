@@ -25,5 +25,5 @@ async def get_price(message: Message):
     else:
         await message.answer(text = await message_to_send(currency='binance-coin'), reply_markup=ReplyKeyboardRemove())
 
-async def message_to_send(currency):
+async def message_to_send(currency: str):
     return f'Actuall price <b>{currency}: {get_price_c(currency=currency)}</b>'

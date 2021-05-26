@@ -1,9 +1,10 @@
+from aiogram.dispatcher.dispatcher import Dispatcher
 from utils.set_bot_commands import set_default_commands
 from utils.db_api.database import create_db
 from loader import db
 
 
-async def on_startup(dp):
+async def on_startup(dp: Dispatcher):
     import middlewares
     middlewares.setup(dp)
     from utils.notify_admins import on_startup_notify
