@@ -17,4 +17,4 @@
 
 # Links 🔗
 ### Bot demonstration
-[![Youtube](https://img.shields.io/badge/-Youtube-090909?style=for-the-badge&logo=Youtube)](https://youtu.be/f9Zky27D7Xg)
+[![Youtube](https://img.shields.io/badge/-Youtube-090909?style=for-the-badge&logo=Youtube&logoColor=ed250e)](https://youtu.be/f9Zky27D7Xg)
